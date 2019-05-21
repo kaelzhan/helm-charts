@@ -1,0 +1,25 @@
+apiVersion: v1
+entries:
+  kubernetes-dashboard:
+  - apiVersion: v1
+    appVersion: 1.10.1
+    created: 2019-05-21T15:42:43.879292838+08:00
+    description: General-purpose web UI for Kubernetes clusters
+    digest: 7df3fc3683d1201088c182ce851bf3a1c24753d53dde2cd28252de70a50bf518
+    home: https://github.com/kubernetes/dashboard
+    icon: https://raw.githubusercontent.com/kubernetes/kubernetes/master/logo/logo.svg
+    keywords:
+    - kubernetes
+    - dashboard
+    maintainers:
+    - email: Kevin.Fox@pnnl.gov
+      name: kfox1111
+    - email: cdesaintmartin@wiremind.fr
+      name: desaintmartin
+    name: kubernetes-dashboard
+    sources:
+    - https://github.com/kubernetes/dashboard
+    urls:
+    - kubernetes-dashboard-1.5.2.tgz
+    version: 1.5.2
+generated: 2019-05-21T15:42:43.878476806+08:00
