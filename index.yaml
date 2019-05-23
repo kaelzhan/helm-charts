@@ -1,9 +1,37 @@
 apiVersion: v1
 entries:
+  jenkins:
+  - apiVersion: v1
+    appVersion: lts
+    created: 2019-05-23T16:33:25.925930734+08:00
+    description: Open source continuous integration server. It supports multiple SCM
+      tools including CVS, Subversion and Git. It can execute Apache Ant and Apache
+      Maven-based projects as well as arbitrary scripts.
+    digest: 7fae7c9ea751d472aabd251cfbdd2bb32dc5f4f4669fd5fdbb188c96f11a86e3
+    home: https://jenkins.io/
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    maintainers:
+    - email: lachlan.evenson@microsoft.com
+      name: lachie83
+    - email: viglesias@google.com
+      name: viglesiasce
+    - email: maor.friedman@redhat.com
+      name: maorfr
+    - email: mail@torstenwalter.de
+      name: torstenwalter
+    name: jenkins
+    sources:
+    - https://github.com/jenkinsci/jenkins
+    - https://github.com/jenkinsci/docker-jnlp-slave
+    - https://github.com/nuvo/kube-tasks
+    - https://github.com/jenkinsci/configuration-as-code-plugin
+    urls:
+    - https://raw.githubusercontent.com/kaelzhan/helm-charts/master/jenkins-1.1.21.tgz
+    version: 1.1.21
   kubernetes-dashboard:
   - apiVersion: v1
     appVersion: 1.10.1
-    created: 2019-05-22T14:50:59.259817235+08:00
+    created: 2019-05-23T16:33:25.926618468+08:00
     description: General-purpose web UI for Kubernetes clusters
     digest: 7df3fc3683d1201088c182ce851bf3a1c24753d53dde2cd28252de70a50bf518
     home: https://github.com/kubernetes/dashboard
@@ -20,12 +48,12 @@ entries:
     sources:
     - https://github.com/kubernetes/dashboard
     urls:
-    - https://kaelzhan.github.io/helm-charts/kubernetes-dashboard-1.5.2.tgz
+    - https://raw.githubusercontent.com/kaelzhan/helm-charts/master/kubernetes-dashboard-1.5.2.tgz
     version: 1.5.2
   nginx-ingress:
   - apiVersion: v1
     appVersion: 0.24.1
-    created: 2019-05-22T14:50:59.261142189+08:00
+    created: 2019-05-23T16:33:25.927628883+08:00
     description: An nginx Ingress controller that uses ConfigMap to store the nginx
       configuration.
     digest: 88c52807addebcd7b817edd6655f6fe4c1b2099a0a7f845b86344a672b799a95
@@ -45,12 +73,12 @@ entries:
     sources:
     - https://github.com/kubernetes/ingress-nginx
     urls:
-    - https://kaelzhan.github.io/helm-charts/nginx-ingress-1.6.10.tgz
+    - https://raw.githubusercontent.com/kaelzhan/helm-charts/master/nginx-ingress-1.6.10.tgz
     version: 1.6.10
   traefik:
   - apiVersion: v1
     appVersion: 1.7.9
-    created: 2019-05-22T14:50:59.262537903+08:00
+    created: 2019-05-23T16:33:25.928944304+08:00
     description: A Traefik based Kubernetes ingress controller with Let's Encrypt
       support
     digest: 8ff54d5760536e5e1fae72639fd8aaaa2fb44dd996a1ab0a7fd2594df1ae5902
@@ -76,6 +104,6 @@ entries:
     - https://github.com/containous/traefik
     - https://github.com/helm/charts/tree/master/stable/traefik
     urls:
-    - https://kaelzhan.github.io/helm-charts/traefik-1.68.4.tgz
+    - https://raw.githubusercontent.com/kaelzhan/helm-charts/master/traefik-1.68.4.tgz
     version: 1.68.4
-generated: 2019-05-22T14:50:59.25796945+08:00
+generated: 2019-05-23T16:33:25.923084682+08:00
