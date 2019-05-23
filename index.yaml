@@ -3,7 +3,7 @@ entries:
   kubernetes-dashboard:
   - apiVersion: v1
     appVersion: 1.10.1
-    created: 2019-05-21T15:42:43.879292838+08:00
+    created: 2019-05-22T14:50:59.259817235+08:00
     description: General-purpose web UI for Kubernetes clusters
     digest: 7df3fc3683d1201088c182ce851bf3a1c24753d53dde2cd28252de70a50bf518
     home: https://github.com/kubernetes/dashboard
@@ -20,6 +20,62 @@ entries:
     sources:
     - https://github.com/kubernetes/dashboard
     urls:
-    - kubernetes-dashboard-1.5.2.tgz
+    - https://kaelzhan.github.io/helm-charts/kubernetes-dashboard-1.5.2.tgz
     version: 1.5.2
-generated: 2019-05-21T15:42:43.878476806+08:00
+  nginx-ingress:
+  - apiVersion: v1
+    appVersion: 0.24.1
+    created: 2019-05-22T14:50:59.261142189+08:00
+    description: An nginx Ingress controller that uses ConfigMap to store the nginx
+      configuration.
+    digest: 88c52807addebcd7b817edd6655f6fe4c1b2099a0a7f845b86344a672b799a95
+    engine: gotpl
+    home: https://github.com/kubernetes/ingress-nginx
+    icon: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Nginx_logo.svg/500px-Nginx_logo.svg.png
+    keywords:
+    - ingress
+    - nginx
+    maintainers:
+    - email: jack.zampolin@gmail.com
+      name: jackzampolin
+    - email: mgoodness@gmail.com
+      name: mgoodness
+    - name: ChiefAlexander
+    name: nginx-ingress
+    sources:
+    - https://github.com/kubernetes/ingress-nginx
+    urls:
+    - https://kaelzhan.github.io/helm-charts/nginx-ingress-1.6.10.tgz
+    version: 1.6.10
+  traefik:
+  - apiVersion: v1
+    appVersion: 1.7.9
+    created: 2019-05-22T14:50:59.262537903+08:00
+    description: A Traefik based Kubernetes ingress controller with Let's Encrypt
+      support
+    digest: 8ff54d5760536e5e1fae72639fd8aaaa2fb44dd996a1ab0a7fd2594df1ae5902
+    engine: gotpl
+    home: https://traefik.io/
+    icon: https://docs.traefik.io/img/traefik.logo.png
+    keywords:
+    - traefik
+    - ingress
+    - acme
+    - letsencrypt
+    maintainers:
+    - email: kent.rancourt@microsoft.com
+      name: krancour
+    - email: emile@vauge.com
+      name: emilevauge
+    - email: daniel.tomcej@gmail.com
+      name: dtomcej
+    - email: ludovic@containo.us
+      name: ldez
+    name: traefik
+    sources:
+    - https://github.com/containous/traefik
+    - https://github.com/helm/charts/tree/master/stable/traefik
+    urls:
+    - https://kaelzhan.github.io/helm-charts/traefik-1.68.4.tgz
+    version: 1.68.4
+generated: 2019-05-22T14:50:59.25796945+08:00
