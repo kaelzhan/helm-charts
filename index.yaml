@@ -3,7 +3,7 @@ entries:
   jenkins:
   - apiVersion: v1
     appVersion: lts
-    created: 2019-05-23T16:33:25.925930734+08:00
+    created: 2019-05-24T11:39:29.853738514+08:00
     description: Open source continuous integration server. It supports multiple SCM
       tools including CVS, Subversion and Git. It can execute Apache Ant and Apache
       Maven-based projects as well as arbitrary scripts.
@@ -26,12 +26,12 @@ entries:
     - https://github.com/nuvo/kube-tasks
     - https://github.com/jenkinsci/configuration-as-code-plugin
     urls:
-    - https://raw.githubusercontent.com/kaelzhan/helm-charts/master/jenkins-1.1.21.tgz
+    - jenkins-1.1.21.tgz
     version: 1.1.21
   kubernetes-dashboard:
   - apiVersion: v1
     appVersion: 1.10.1
-    created: 2019-05-23T16:33:25.926618468+08:00
+    created: 2019-05-24T11:39:29.855013576+08:00
     description: General-purpose web UI for Kubernetes clusters
     digest: 7df3fc3683d1201088c182ce851bf3a1c24753d53dde2cd28252de70a50bf518
     home: https://github.com/kubernetes/dashboard
@@ -48,12 +48,12 @@ entries:
     sources:
     - https://github.com/kubernetes/dashboard
     urls:
-    - https://raw.githubusercontent.com/kaelzhan/helm-charts/master/kubernetes-dashboard-1.5.2.tgz
+    - kubernetes-dashboard-1.5.2.tgz
     version: 1.5.2
   nginx-ingress:
   - apiVersion: v1
     appVersion: 0.24.1
-    created: 2019-05-23T16:33:25.927628883+08:00
+    created: 2019-05-24T11:39:29.856727749+08:00
     description: An nginx Ingress controller that uses ConfigMap to store the nginx
       configuration.
     digest: 88c52807addebcd7b817edd6655f6fe4c1b2099a0a7f845b86344a672b799a95
@@ -73,12 +73,12 @@ entries:
     sources:
     - https://github.com/kubernetes/ingress-nginx
     urls:
-    - https://raw.githubusercontent.com/kaelzhan/helm-charts/master/nginx-ingress-1.6.10.tgz
+    - nginx-ingress-1.6.10.tgz
     version: 1.6.10
   traefik:
   - apiVersion: v1
     appVersion: 1.7.9
-    created: 2019-05-23T16:33:25.928944304+08:00
+    created: 2019-05-24T11:39:29.858996673+08:00
     description: A Traefik based Kubernetes ingress controller with Let's Encrypt
       support
     digest: 8ff54d5760536e5e1fae72639fd8aaaa2fb44dd996a1ab0a7fd2594df1ae5902
@@ -104,6 +104,32 @@ entries:
     - https://github.com/containous/traefik
     - https://github.com/helm/charts/tree/master/stable/traefik
     urls:
-    - https://raw.githubusercontent.com/kaelzhan/helm-charts/master/traefik-1.68.4.tgz
+    - traefik-1.68.4.tgz
     version: 1.68.4
-generated: 2019-05-23T16:33:25.923084682+08:00
+  wordpress:
+  - apiVersion: v1
+    appVersion: 5.2.1
+    created: 2019-05-24T11:39:29.861114626+08:00
+    description: Web publishing platform for building blogs and websites.
+    digest: 19f3d3fda15ddd65c4c1e5e0431164af079519c5b1ca1cb5830b9e85be22dbad
+    engine: gotpl
+    home: http://www.wordpress.com/
+    icon: https://bitnami.com/assets/stacks/wordpress/img/wordpress-stack-220x234.png
+    keywords:
+    - wordpress
+    - cms
+    - blog
+    - http
+    - web
+    - application
+    - php
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    name: wordpress
+    sources:
+    - https://github.com/bitnami/bitnami-docker-wordpress
+    urls:
+    - wordpress-5.9.6.tgz
+    version: 5.9.6
+generated: 2019-05-24T11:39:29.844206857+08:00
